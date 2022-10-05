@@ -22,4 +22,6 @@ jobs:
       - name: installing appium 
         run: sudo npm install -g appium 
       - name: appium
-        run: appium
+        run: |
+          appium & 
+          echo "running some tests"
