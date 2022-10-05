@@ -1,6 +1,8 @@
 name: Hello
 
-on: workflow_dispatch
+on: 
+  - push
+  - workflow_dispatch
 
 jobs: 
   hello:
@@ -9,3 +11,7 @@ jobs:
     steps:
       - name: Hello
         run: echo "hello"
+      - name: Print java version
+        run: java --version
+      
+
