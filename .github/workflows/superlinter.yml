@@ -11,6 +11,8 @@ jobs:
     steps:
       - name: Hello
         run: echo "hello"
+      - name: chekoutCodeBase
+        uses: actions/checkout@v1
       - name: Print java version
         run: java --version
       - name: Setup Android SDK
